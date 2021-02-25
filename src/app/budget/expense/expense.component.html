@@ -1,0 +1,43 @@
+<div class="p-grid">
+    <div class="p-sm-12 p-md-12">
+        <p-card header="Enter Expense">
+            <form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+                <div class="card">
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="source6">Source</label>
+                            <input id="source6"
+                             type="text"
+                             formControlName="source"
+                              pInputText>
+                            <span
+                            *ngIf="!expenseForm.get('source').valid && expenseForm.get('source').touched" 
+                            class="p-error"> Source is required</span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="amount6">Amount</label>
+                            <input id="amount6" type="text"
+                            formControlName="amount"
+                            pInputText>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="date">Date</label>
+                            <input id="date" type="text"
+                            formControlName="date"
+                            pInputText>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="account">Account</label>
+                            <input id="account" type="text"
+                            formControlName="account"
+                            pInputText>
+                        </div>
+                    </div>
+                </div>
+
+                <button pButton pRipple type="submit" label="Save" class="p-button-help"></button>
+            </form>
+        </p-card>
+
+    </div>
+</div>

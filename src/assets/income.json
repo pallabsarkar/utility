@@ -1,0 +1,25 @@
+[
+        {
+            "source": "Company Salary",
+            "amount": "2200",
+            "date": "2021-02-08",
+            "account": "Chase"
+        }, {
+            "source": "Company Salary",
+            "amount": "2200",
+            "date": "2021-02-23",
+            "account": "Chase"
+        },{
+            "source": "Shares",
+            "amount": "1000",
+            "date": "2021-02-10",
+            "account": "Alliant"
+        },{
+            "source": "Side Business",
+            "amount": "1500",
+            "date": "2021-02-01",
+            "account": "Alliant"
+        }
+
+
+    ]

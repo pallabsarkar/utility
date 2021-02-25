@@ -1,0 +1,25 @@
+[
+    {
+        "source": "Patel Brothers",
+        "amount": "120",
+        "date": "2021-02-08",
+        "account": "Capital One"
+    }, {
+        "source": "Costco Grocery",
+        "amount": "80",
+        "date": "2021-02-08",
+        "account": "Chase Credit"
+    },{
+        "source": "Laptop",
+        "amount": "1700",
+        "date": "2021-02-08",
+        "account": "Chase Debit"
+    },{
+        "source": "Costco Gas",
+        "amount": "20",
+        "date": "2021-02-08",
+        "account": "Chase Credit"
+    }
+
+
+]

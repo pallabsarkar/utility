@@ -1,0 +1,35 @@
+<div class="p-grid">
+    <div class="p-sm-12 p-md-12">
+        <p-card header="Enter Income">
+            <form (ngSubmit)="onAddFormSubmit(f)" #f="ngForm">
+                <div class="card">
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="source6">Source</label>
+                            <input id="source6" type="text" ngModel name="source" #source="ngModel" pInputText
+                                required minlength="5">
+                            <!-- <span *ngIf="!source.valid && source.touched">First Name is required</span> -->
+                            <small *ngIf="!source.valid && source.touched" id="username2-help"
+                                class="p-error">Source is required.</small>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="amount6">Amount</label>
+                            <input id="amount6" type="text" ngModel name="amount" #Amount="ngModel" pInputText>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="date">Date</label>
+                            <input id="date" type="text" ngModel name="date" #date="ngModel" pInputText>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="account">Account</label>
+                            <input id="account" type="text" ngModel name="account" #account="ngModel" pInputText>
+                        </div>
+                    </div>
+                </div>
+
+                <button pButton pRipple type="submit" label="Save" class="p-button-raised"></button>
+            </form>
+        </p-card>
+
+    </div>
+</div>
