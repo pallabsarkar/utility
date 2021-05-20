@@ -11,6 +11,7 @@ export class AppComponent {
   items: MenuItem[];
 
   ngOnInit() {
+	  console.log("app component");
     this.items = [
         {
         label: 'Budget',
